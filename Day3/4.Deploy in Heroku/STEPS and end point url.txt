@@ -1,0 +1,7 @@
+Unable to login from heroku CLI.
+CMD window hanged during login. Tried multiple times.
+Repo was forked to my personal account.
+Connected git repo from heroku UI from browser.
+App was deployed through UI.
+
+end point url: https://madhansjson-server.herokuapp.com/
