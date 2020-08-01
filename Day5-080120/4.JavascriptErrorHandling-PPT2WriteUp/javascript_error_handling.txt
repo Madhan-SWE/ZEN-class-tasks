@@ -1,0 +1,82 @@
+
+Javascript error handling:
+==========================
+    The devloper must assume all the errors possible and minimize the chances of getting error at the first place.
+    Errors should be easy to detect, it should have minimal consequences or effects should be reversible.
+
+    Rules of error handling:
+    ========================
+    * Assume your code will fail
+        example:
+            for(x in arr)
+            {
+                console.log(x);
+            }
+        what if x is null?
+
+    * Log errors to the server
+        Errors should be logged in the server logs
+
+    * you not the browser handle errors
+        Error should be catched on try catch block and thrown to window.
+        The user should get the error from the page not from the browser.
+
+    *Identify where errors might occur
+        Type of errors:
+
+            type coercian errors:
+                boolean conversion:
+                    if(1) -> always executed
+                    if(0) -> never executed
+                Equivalence conversion:
+                    1 == "1" -> true
+                    1 === "1" -> false
+
+            data type errors:
+                Verify datatypes before the operation.
+
+                fixed code:
+                if (values instanceof Array)
+                {
+                    values.sort(function(a,b)
+                    {
+                        return a-b;
+                    });
+                }
+        
+            Communication errors:
+                sending
+                - invalid url or post data
+                - invalid request status
+                - no network connection
+
+            throw your own errors:
+                Errors should be thrown in low level parts of the application (core libraries)
+                Try catch should be used in high level parts (application or user side)
+
+            Distinguish fatal vs non fatal:
+                Non Fatal:
+                    error will not affect user's main tasks
+                    recovery is possible
+                    should not be thrown to user unless it is necessary
+
+                Fatal:
+                    The application can not continue 
+                    Affects the user tasks
+                    Error can produce other errors 
+                    Should be alreted to the user immediately and page should be reloaded
+
+            Provide a debug mode:
+                Assign a variable that is globally available (to enable or disable debugger)
+                try catch should rethrow error
+                window.onerror should return false (during debug mode means override the method, call a method
+                to handle window.onerror and return false if debugger is enabled)
+                allow the browser to handle the error
+
+
+
+sources:
+========
+    https://www.slideshare.net/nzakas/enterprise-javascript-error-handling-presentation/52
+
+            

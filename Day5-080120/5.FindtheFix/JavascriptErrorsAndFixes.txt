@@ -1,0 +1,127 @@
+1. Uncaught Type Error: cannot read property 'l' undefined
+
+    a = [1];
+    if(a&&a.l&&a.l.l)
+    {
+        console.log(a.l.l);
+    }
+    else
+    {
+        console.log("a.l.l is not defined");
+    }
+
+reference : https://trungk18.com/experience/uncaught-type-error/
+
+2. TyperError: Undefined is not an object
+    Happens only in safari
+    var x = undefined;
+    if (x!=undefined)
+    {
+        console.log(x);
+    }
+    else
+    {
+        console.log("X is undefined");
+    }
+
+reference: https://rollbar.com/blog/top-10-javascript-errors/
+
+3. TyperError: null is not an object
+    Happens only in safari
+    var x = undefined;
+    if (x!=null)
+    {
+        console.log(x);
+    }
+    else
+    {
+        console.log("X is null");
+    }
+
+reference: https://rollbar.com/blog/top-10-javascript-errors/
+
+4. Unknown script error
+
+    Script errors are mostly likely to be caused by an error within a script that’s hosted on a different domain (for example, CDN scripts). As a result, the user’s browser stops the script from executing in order to prevent an attack called cross-site request forgery. However, it may also be a problem if the script is stored on the same domain but uses a different port, protocol (for example http:// instead of https://), or subdomain
+
+    // File: origin-domain.com/index.html
+    <script src="http://another-domain.com/index.js"></script>
+
+    index.js might be in another domain.
+    Need to use proxy server as below to fix the error.
+
+    <script src="https://cors-anywhere.herokuapp.com/another-domain.com/index.js"></script>
+
+ reference: https://rollbar.com/blog/top-10-javascript-errors/
+
+5. Type error: Object Doesn't support Property
+
+    a = [1]
+    if (a.hasOwnProperty("hello"))
+    {
+        hello();
+    }
+    else
+    {
+        console.log("Function hello is not defined");
+    }
+
+reference: 
+https://ourcodeworld.com/articles/read/166/how-to-check-if-an-object-has-a-property-properly-in-javascript
+https://dmitripavlutin.com/check-if-object-has-property-javascript/
+
+6. TypeError: Undefined is not a function
+
+   This throws an error:
+   x();
+   var x = function() { return 2;};
+
+   Here is the fix:
+   x();
+   function x(){ return 2;}
+
+reference: http://net-informations.com/js/err/function.htm
+
+7.Uncaught range error: maximum call stack
+  Happens during recursive calls
+
+  function add()
+  {
+      add();
+  }
+  add();
+
+  need to add a proper base condition for the recursion to complete
+
+
+8. TypeError: cannot read property length
+
+   d = undefined;
+   if(d.hasOwnProperty("length"))
+   {
+       console.log(d.length);
+   }
+   else
+   {
+       console.log("No length available");
+   }
+
+
+9. Uncaught TypeError: cannot set property
+
+   var f
+   f[0]=1
+
+   fix:
+   var f = []
+   f[0] = 1
+
+
+10. Reference error event is not defined
+
+   document.addEventListener("mousemove", function (event) {
+      console.log(event);
+   })
+
+   Need to add event listeners for the expected event and call the function with the event
+   when the event happens.
