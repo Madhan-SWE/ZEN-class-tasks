@@ -24,12 +24,17 @@ function response_handling_method()
 
 }
 
+function error_handler_method()
+{
+    console.log("Error on XHR request");
+}
 // Create a request variable and assign a new XMLHttpRequest object to it.
 var request = new XMLHttpRequest();
 var url_string = 'https://api.openweathermap.org/data/2.5/weather?q=Bangalore&appid=9069688a96d60b45c00135f76c6433d8';
 
 // Adding handler for the response
 request.onload = response_handling_method;
+request.onerror = error_handler_method;
 
 
 // Open a new connection, using the GET request on the URL endpoint
