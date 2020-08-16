@@ -1,0 +1,297 @@
+p{
+    text-align: center;
+    color: white;
+}
+.banner
+{
+    position: relative;
+    margin-left:25%;
+    margin-right: 25%;
+    background-color: rgb(59, 59, 59);
+    height: 1800px;
+}
+.frame1
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 20px;
+    width: 80%;
+    height: 100px;
+    
+
+}
+.frame2
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 40px;
+    width: 80%;
+    background-color: white;
+    height: 260px;
+}
+.frame2LeftBox
+{
+    background-color: orange;
+    width:50%;
+    height:100%;
+    float: left;
+    
+}
+.frame2RightBox
+{
+    background-color:rgb(52, 164, 255);
+    width:50%;
+    height:100%;
+    float: left;
+}
+
+.frame3
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 70px;
+    width: 80%;
+    background-color: rgb(255, 85, 85);
+    height: 180px;
+}
+.frame3LeftBox
+{
+    width:50%;
+    height:100%;
+    float: left;
+    height: 100px;
+    
+}
+.frame3RightBox
+{
+    width:50%;
+    height:100%;
+    float: left;
+    height: 100px;
+}
+.frame3DownBox
+{
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.frame3RightBoxb1
+{
+    width: 33%;
+    height: 100px;
+    float: left;
+}
+.frame3RightBoxb2
+{
+    width: 33%;
+    height: 100px;
+    float: left;
+}
+.frame3RightBoxb3
+{
+    width: 33%;
+    height: 100px;
+    float: left;
+}
+.frame4
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 100px;
+    width: 80%;
+    background-color: rgb(52, 164, 255);
+    height: 240px;
+}
+.frame4LeftBox
+{
+    width:50%;
+    height:100%;
+    float: left;
+    height: 260px;
+    
+}
+.frame4RightBox
+{
+    width:50%;
+    height:100%;
+    float: left;
+    height: 260px;
+}
+
+.frame5
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 120px;
+    width: 80%;
+
+    height: 180px;
+}
+.frame5LeftBox
+{
+    background-color: rgb(255, 85, 85);
+    width:50%;
+    height:100%;
+    float: left;
+    height: 260px;
+    
+}
+.frame5RightBox
+{
+    background-color: orange;
+    width:50%;
+    height:100%;
+    float: left;
+    height: 260px;
+}
+
+.frame6
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 150px;
+    width: 80%;
+    height: 150px;
+}
+.frame6LeftBox
+{
+    position: relative;
+    background-color: rgb(52, 164, 255);
+    width:70%;
+    height:100%;
+    float: left;
+    height: 120px;
+    
+}
+.frame6RightBox
+{
+    background-color: rgb(52, 164, 255);
+    width:30%;
+    height:100%;
+    float: left;
+    height: 120px;
+}
+
+
+.frame7
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 180px;
+    width: 80%;
+ 
+    height: 120px;
+}
+.frame7LeftBox
+{
+    background-color: orange;
+    width:70%;
+    height:100%;
+    float: left;
+    height: 120px;
+    
+}
+.frame7RightBox
+{
+    background-color: orange;
+    width:30%;
+    height:100%;
+    float: left;
+    height: 120px;
+}
+
+.frame8
+{
+    position: relative;
+    margin-left:10%;
+    margin-right: 10%;
+    top: 210px;
+    width: 80%;
+    height: 260px;
+}
+.frame8LeftBox
+{
+    background-color: rgb(52, 164, 255);
+    width:50%;
+    height:100%;
+    float: left;
+    height: 260px;
+    
+}
+.frame8RightBox
+{
+    background-color: rgb(255, 85, 85);
+    width:50%;
+    height:100%;
+    float: left;
+    height: 260px;
+}
+
+.frame1ImageBorderInner
+{
+    position: absolute;
+    top: 15px;
+    left: 100;
+    
+    border: 5px solid white;
+    padding: 12px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(52, 164, 255);
+}
+
+
+.frame1ImageBorderOuter
+{
+    float: left;
+    width: 20%;
+    text-align: right;
+    left: 50px;
+    background-color: rgb(52, 164, 255);
+}
+.frame1TextDiv
+{
+    position:absolute;
+    left: 30%;
+    width: 60%;
+    float: left;
+    text-align: Left;
+    padding-left: 20px;
+}
+#textObesity
+{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 85, 85);
+    font-weight: bold;
+}
+#textObesityDown
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+}
+.bigFont
+{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.midFont
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.justify
+{
+    text-align: justify;
+}
