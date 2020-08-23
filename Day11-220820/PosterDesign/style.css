@@ -1,0 +1,435 @@
+.posterBackground
+{
+ 
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 5020px;
+    width: 80%;
+    margin-left: 10%;
+}
+.titleBackground
+{
+  position: absolute;
+  border-radius: 25px;
+  width: 1067px;
+  background-color: #1F1527;
+  height: 520px;
+  
+}
+.titleBackgroundFix
+{
+    width: 1067px;
+    height: 128px;
+    background-color: #1F1527;
+    position:absolute;
+    z-index:1;
+    transform: skewY(-4deg);
+    top: 440px;
+    
+
+
+}
+
+.contactBackground
+{
+    position: absolute;
+    top: 4530px;
+    width: 1067px;
+    background-color: #DADCDD;
+    height: 400px;
+    z-index: 4;
+    transform: skewY(-4deg);
+
+}
+.contactBackgroundfixer
+{
+    background-color: #DADCDD;
+    position: absolute;
+    top: 4870px;
+    width: 1067px;
+    height: 100px;
+}
+
+.contactLeft
+{
+    position: absolute;
+    display: inline-block;
+    top: 4600px;
+    width: 900px;
+    z-index: 5;
+    left: 200px;
+    font-style: bold;
+    font-size: 25px;
+    color: rgb(138, 128, 128);
+
+}
+
+.contactRight
+{
+    position: absolute;
+    display: inline-block;
+    top: 4600px;
+    width: 190px;
+    left: 900px;
+    z-index: 5;
+    text-align: right;
+
+}
+.ctitle
+{
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 30px;
+}
+.url
+{
+    top: 
+    color:black;
+    position:absolute;
+    z-index: 5;
+    top: 4930px;
+    font-size: 20px;
+    left: 200px;
+    color: rgb(138, 128, 128);
+}
+.footer
+{
+    padding: 20px;
+    position: absolute;
+    top: 4970px;
+    height: 30px;
+    
+    width: 1027px;
+    z-index: 5;
+}
+.f1
+{
+    position: relative;
+    left: 50px;
+    display:inline-block;
+    float:left;
+    z-index: 5;
+    font-style: bold;
+}
+.f2
+{
+   
+    left: 300px;
+    position: relative;
+    display:inline-block;
+    float:left;
+    z-index: 5;
+    font-style: bold;
+}
+.dottedBorder
+{
+    border: 3px dashed white;
+    width: 75%;
+    position: absolute; 
+    height: 4600;
+    margin: 20px;
+    margin-right: -3px;
+    border-radius: 20px; 
+    z-index: 1;
+
+}
+.posterTitle
+{
+    background-color: #1F1527;
+    color: white;
+    z-index: 3;
+    position: absolute;
+    display: inline-block;
+    left: 40%;
+    top: 20px;
+    font-size: 25px;
+    padding-left:20px;
+    padding-right: 20px;
+    z-index:2;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+.skewedBlock
+{
+    width:100%;
+    height: 500px;
+    transform: skewY(-4deg);
+    position: absolute;
+    width: 1067px;
+}
+
+.longScrollBackGroundImg
+{
+
+    top: 570px;
+    background-image: url("sea-and-the-desert.jpg");
+    opacity: 0.9;
+    background-size: 1200px 800px;
+  
+}
+
+.longScrollBackGround
+{
+
+    top: 570px;
+    background-color: #F2E8DF;
+    opacity: 0.7;
+    z-index:2;
+  
+}
+
+.longScrollContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 640px;
+    left: 360px;
+    
+}
+.storyTellingBackGround
+{
+    top: 1070px;
+    background-color:#1F1527;
+    opacity: 0.8;
+}
+.storyTellingBackGroundImg
+{
+
+    top: 1070px;
+    background-image: url("what-is-your-story.jpg");
+    opacity: 0.9;
+    background-size: 1200px 560px;
+  
+}
+
+.storyTellingContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 1180px;
+    left: 600px;
+
+
+}
+.storyTellingText
+{
+    color:white;
+}
+
+.simpleInterfaceBackGround
+{
+    top: 1570px;
+    background-color: #ffbce3;
+    opacity: 0.6;
+}
+
+.simpleInterfaceContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 1640px;
+    left: 400px;
+
+}
+
+.simpleInterfaceBackGroundImg
+{
+
+    top: 1570px;
+    background-image: url("handHoldingPhone.jpg");
+    opacity: 0.9;
+    background-size: 1200px 800px;
+  
+}
+.pointMessagingBackGround
+{
+    top: 2070px;
+    background-color:  rgb(253, 162, 205);
+    opacity: 0.9;
+}
+.pointMessagingBackGroundImg
+{
+
+    top: 2070px;
+    background: repeating-linear-gradient(45deg, 
+    #ffc1ef,
+  #f586e2 10px,
+  #f776c5 10px,
+  #f85cd6 20px
+);
+    opacity: 0.9;
+    background-size: 1200px 800px;
+  
+}
+.pointMessagingContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 2140px;
+    left: 640px;
+
+}
+
+.easyForUsersBackGround
+{
+    top: 2570px;
+    background-color: #cfdaf7;
+    opacity: 0.6;
+
+}
+.easyForUsersBackGroundImg
+{
+
+    top: 2570px;
+    background-image: url("manonmountain.jpg");
+    opacity: 0.9;
+    background-size: 1200px 800px;
+  
+}
+.easyForUsersContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 2640px;
+    left: 400px;
+
+}
+.easyForUsersText
+{
+    color: black;
+}
+.longScrollnotesBackGround
+{
+    top: 3070px;
+    background-color: #1F1527;
+    opacity: 0.8;
+}
+.longScrollnotesBackGroundImg
+{
+
+    top: 3070px;
+    background-image: url("seo.jpg");
+    opacity: 0.9;
+    background-size: 1200px 800px;
+  
+}
+.longScrollnotesContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 3140px;
+    left: 400px;
+
+}
+
+.slowerLoadTimesBackGround
+{
+    top: 3570px;
+    background-color: rgb(252, 143, 194);
+    opacity: 0.8;
+}
+.slowerLoadTimesBackGroundImg
+{
+
+    top: 3570px;
+    background-image: url("loading.jpg");
+    opacity: 0.9;
+    background-size: 1200px 800px;
+  
+}
+.slowerLoadTimesContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 3640px;
+    left: 350px;
+
+}
+
+.awkwardNavigationGround
+{
+    top: 4070px;
+    background: repeating-linear-gradient(45deg, 
+    #eec84b,
+  #f3b251 30px,
+  #e9b673 30px,
+  #f5dc8d 30px
+);
+  
+    opacity: 0.6;
+}
+.awkwardNavigationContent
+{
+    position: absolute;
+    z-index: 3;
+    top: 4100px;
+    left: 500px;
+
+}
+
+
+.headerContent
+{
+    position: absolute;
+    z-index: 3;
+    color:rgb(247, 186, 244);
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    left: 25%;
+    margin-top: 50px;
+}
+.bigLetter
+{
+    font-size: 160px;
+    font-family: 'Euphoria Script', cursive; 
+}
+.midfont
+{
+    font-size: 35px;
+    font-style:bold;
+}
+.midfontsmall
+{
+    font-size: 25px;
+    font-style:bold;
+}
+.midfontsmalltwo
+{
+    font-size: 27px;
+    font-style:bold;
+}
+.letter
+{
+    display: inline-block;
+}
+.suffix
+{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.shadow
+{
+    text-shadow: 2px 8px #5c264e;
+    color:white;
+}
+.basicContentCalibri
+{
+    font-family: calibri;
+    font-size: 16px;
+    color: rgb(124, 120, 120)
+}
+.poinMessagingText
+{
+    color: white;
+    font-size: 20px;
+}
+.pointMessagingTitleText
+{
+    color:white
+}
+.belowConttent
+{
+    position: relative;
+    left: 70px;
+}
