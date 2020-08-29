@@ -1,0 +1,230 @@
+img{
+    
+    border-radius: 50%;
+    border: 5px dashed #FABE28;
+}
+
+#parentDiv
+{
+    padding: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #FFFFFF;
+    height: 1250px;
+    border: 1px solid black;
+}
+#firstBlock
+{
+    position: relative;
+    height: 250px;
+    background-color: #565656;
+}
+
+#secondBlcok
+{
+    position: relative;
+    height: 35px;
+    background-color:#E5E5E5;
+}
+
+#thirdBlcok
+{
+    position: relative;
+    height: 80px;
+    background-color: #565656;
+}
+
+#profileImageNameDiv
+{
+    
+    height: 250px;
+    width: 550px;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 30%;
+}
+#profileName
+{
+    position: relative;
+    background-color: #FABE28;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 70px;
+    top: -35px;
+}
+
+#addressDiv
+{
+    text-align: center;
+    height: 30px;
+    padding-top: 8px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#leftDiv
+{
+    padding-left: 5px;
+    position: relative;
+    display: inline-block;
+    height: 800px;
+    width: 48%;
+    float: left;
+}
+#midDiv
+{
+    position: relative;
+    display: inline-block;
+    height: 800px;
+    width: 1%;
+    border-right: 1px solid black;
+}
+#rightDiv
+{
+    position: relative;
+    display: inline-block;
+    height: 800px;
+    width: 48%;
+    float: right;
+}
+.iconBlock
+{
+    position: relative;
+    height: 32px;
+    width: 32px;
+    background-color: #565656;
+    padding: 8px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30px;
+    color: #FABE28;
+    border: 3px dashed #FABE28;
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+}
+.iconText
+{
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+}
+.iconTextDiv 
+{
+    position: relative;
+    display: block;
+    height: 55px;
+}
+
+.SkillBar
+{
+    padding-top: 2px;
+    height:25px;
+    display: block;
+    width: 100%;
+}
+.SkillName
+{
+    width: 48%;
+    font-weight: bold;
+    padding-left: 5px;
+    background-color: white;
+    float: left;
+    display: inline-block;
+}
+.skillBarRight
+{
+    background-color: #EDEDED;
+    width: 48%;
+    float: right;
+    display: inline-block;
+    height: 7px;
+    margin-top: 5px;
+}
+.skillPercentBlock
+{
+    position: relative;
+    color: red;
+    
+    background-color: #FDBF36;
+    background-image: linear-gradient(to right, #FDBF36 , #f3e4c4);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-size: 10px;
+    display: inline-block;
+    float: left;
+   
+}
+.skillBall
+{
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    border: 1px solid #aca6a6;
+    background-color: white;
+    float: left;
+    top: -5px;
+    left: -2px;
+    z-index: 2;
+}
+.expDiv
+{
+    padding-top: 5px;
+    clear:both;
+}
+.expLeft
+{
+    padding-left: 6px;
+    font-weight: bold;
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.expRight
+{
+    text-align: right;
+    position: relative;
+    width: 48%;
+    display: inline-block;
+    float: right;
+}
+
+.expDown
+{
+    padding-left: 6px;
+    position: relative;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+}
+
+#techSkillsSimpleDiv, #addSkillsSimpleDiv
+{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+#profileDescText
+{
+    clear: both;
+    padding-left: 6px;
+}
+
+#expSimpleDiv
+{
+    clear: both;
+    padding: 5px;
+
+}
+ul
+{
+    text-align: justify;
+}

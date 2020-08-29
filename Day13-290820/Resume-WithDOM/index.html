@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Resume</title>
+</head>
+<body>
+    
+    <script>
+            function createDiv(divId=null, divClass=null)
+            {
+                var divelement = document.createElement("div");
+                if(divId!==null)
+                    divelement.setAttribute("id", divId);
+                if(divClass!==null)
+                    divelement.setAttribute("class", divClass);
+                return divelement;
+            }
+
+            function createIconBlock(iconId, iconStr)
+            {
+                var iconDiv = createDiv(iconId, "iconBlock");
+                var icon = document.createElement("i");
+                icon.setAttribute("class", iconStr);
+                iconDiv.appendChild(icon);
+                return iconDiv;
+            }
+
+            function iconTextDiv(iconId, iconStr, iconTitleText)
+            {
+                var res = createDiv(null, "iconTextDiv ");
+                var iconBlock = createIconBlock(iconId, iconStr);
+                var iconTitle = createDiv(null, "iconText");
+                iconTitle.innerText = iconTitleText;
+                res.appendChild(iconBlock);
+                res.appendChild(iconTitle);
+                return res;
+                
+            }
+
+            function createImg(src="", width="200px", height="200px", imgId=null, imgClass=null)
+            {
+                var image = document.createElement("img");
+                image.setAttribute("src", src);
+                image.setAttribute("height", height);
+                image.setAttribute("width", width);
+                if(imgId!==null)
+                    image.setAttribute("id", imgId);
+                if(imgClass!==null)
+                    image.setAttribute("class", imgClass);
+                return image;
+
+            }
+
+            function createSkillbar(skillId, skillNameTxt, skillPercent)
+            {
+                var skillParent = createDiv(null, "SkillBar");
+                var skillName  = createDiv(null, "SkillName");
+                skillName.innerText = skillNameTxt;
+                skillParent.appendChild(skillName);
+
+                var skillBarRight = createDiv(null, "skillBarRight");
+                var skillPercentBlock = createDiv(null, "skillPercentBlock");
+                skillPercentBlock.style = "width:"+skillPercent;
+                skillPercentBlock.innerText = ".";
+                skillBarRight.appendChild(skillPercentBlock);
+                var skillBall = createDiv(null, "skillBall");
+                skillBarRight.appendChild(skillBall);
+                
+                skillParent.appendChild(skillBarRight);
+                return skillParent;
+            }
+
+            function createExpHeader(expposition,  period, place)
+            {
+                var expDiv = createDiv(null, "expDiv");
+                
+
+                var expLeft = createDiv(null, "expLeft");
+                expLeft.innerText = expposition;
+                var expRight = createDiv(null, "expRight");
+                expRight.innerText = period;
+                var expDown = createDiv(null, "expDown");
+                expDown.innerText = place;
+             
+                expDiv.append(expLeft, expRight, expDown);
+                return expDiv;
+
+            }
+
+            function createUL()
+            {
+                var ul = document.createElement("ul");
+                return ul;
+            }
+            function addULItem(ul, value)
+            {
+                var li = document.createElement("li");
+                li.innerText = value;
+                ul.appendChild(li);
+                return ul;
+            }
+            
+
+
+            var parenDiv = createDiv("parentDiv");
+
+            var firstBlock = createDiv("firstBlock");
+            parenDiv.appendChild(firstBlock);
+
+            var secondBlock = createDiv("secondBlcok");
+            parenDiv.appendChild(secondBlock);
+
+            var thirdBlock = createDiv("thirdBlcok");
+            parenDiv.appendChild(thirdBlock);
+            
+            // Profile section - Name and Picture
+
+            var profileImageNameDiv = createDiv("profileImageNameDiv");
+
+            var profileImage = createImg(src="image.jpg", imgId="profileImage");
+            profileImageNameDiv.appendChild(profileImage);
+
+            var profileName = createDiv("profileName");
+            profileName.innerText = "BRIAN DUDEY";
+            profileImageNameDiv.appendChild(profileName);
+
+            parenDiv.appendChild(profileImageNameDiv);
+
+            // Address section
+            var addressDiv = createDiv("addressDiv");
+            addressDiv.innerText = "N.Damen Avenue, Chicago, 99999 | 999-999-99-99 | hello@kickresume.com |"
+                +"www.kickresume.com";
+            parenDiv.appendChild(addressDiv);
+
+
+            // icon + text  banner is created here
+            var userIconText = iconTextDiv("userIcon", "fa fa-user", "Profile");
+            var techSkillsText = iconTextDiv("techSkillIcon", "fa fa-book", "Technical Skills");
+            var workExIcoTxt = iconTextDiv("workExIcoTxt", "fa fa-mortar-board", "Work Experience");
+            var workExIcoTxt2 = iconTextDiv("workExIcoTxt2", "fa fa-mortar-board", "Work Experience");
+            var educationIconText = iconTextDiv("educationIcon", "fa fa-book", "Education");
+
+
+            // skill bar is created here
+            var skillJava = createSkillbar("skillJava", "JavaScript", "60%");
+            var skillCss = createSkillbar("skillCss", "CSS", "80%");
+            var skillHtml = createSkillbar("skillHtml", "HTML", "60%");
+            var skillReact = createSkillbar("skillReact", "React", "75%");
+
+
+            var skillProjManage = createSkillbar("skillProjManage", "Project Management", "60%");
+            var skillRecruitment = createSkillbar("skillRecruitment", "Recruitment", "80%");
+            var skillEditing = createSkillbar("skillEditing", "Editing", "46%"); 
+            var skillFundraising = createSkillbar("skillFuncdRaising", "Fund Raising", "75%"); 
+
+            // Experience Header is created here
+            var expHead1 = createExpHeader("Community Relations Manager",  "06/2011 - 01/2014", "Gay & Lesbian ElderHousing, Los Angeles.");
+            var expHead2 = createExpHeader("Event Manager", "03/2014 - 02/2017", "C3 Presents, Washinton DC.");
+            var expHead3 = createExpHeader("Engineering Immersion Program", "11/2018 - 06/2018", "Thinkful, Chingago, IL.");
+            var expHead4 = createExpHeader("BA, English", "09/2001 - 09/2005", "University of California, LosAngeles.");
+
+
+
+            // Unordered lists are created here
+            var ul = createUL();
+            var p1 = "Leadn and Execute all phase of event planning and productionspanning committee, recruitment, training, venfdor relationships, and onsite facilitation";
+            var p2 = "Brought new business to the organization through relentless networing and stewardship which helped the compnay win the bid for the state department summit on the middle eastand the comapnaies largest event todate the united state of women.";
+            var p3 = "Excercise fiscal control over budget creation tracking and reporting. Collaborate with employees at all organizational levels to advance cohesive operations";
+            ul = addULItem(ul, p1);
+            ul = addULItem(ul, p2);
+            ul = addULItem(ul, p3);
+
+
+            var ul2 = createUL();
+            var p1 = "Arraanging Presentations and Pitch desk";
+            var p2 = "Designing a PR plan and Establishing important focus points";
+            var p3 = "Designing creating, managig content across multiple manangement platforms";
+            var p4 = "Building relationships with key media players";
+            ul2 = addULItem(ul2, p1);
+            ul2 = addULItem(ul2, p2);
+            ul2 = addULItem(ul2, p3);
+            ul2 = addULItem(ul2, p4);
+
+            var ul3 = createUL();
+            var p1 = 'Developed a full stack web application "RenewU" using React that allows users to explore various aspectes of meditation. User;s progress is stored on Backend created using node advanceMongo DB.';
+            var p2 = 'Developed language learning app "Foodie Phonetics " using spaced repetition and linked list data structure. React was used to create frontend components while node was used to create backend components';
+            var p3 ='Developed a concirge app "Play for"Individuals looking for curated suggestions When visiting a new place.React was used to develop the front end which used create real time chat drag and drop veriety of advanced features. The backend built using node express and mongo db takes advatage of Well developed RESTFUL API."';
+            ul3 = addULItem(ul3, p1);
+            ul3 = addULItem(ul3, p2);
+            ul3 = addULItem(ul3, p3);
+
+            // Simple Divs are created here
+            var profDesc = createDiv("profileDescText");
+            profDesc.innerText = "Innovative, Optimized Solution Seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious adventurous acsidious and an alliteration advocate.";
+
+            var techSkillsSimpleDiv = createDiv("techSkillsSimpleDiv");
+            techSkillsSimpleDiv.innerHTML = "Technical Skills";
+            var addSkillsSimpleDiv = createDiv("addSkillsSimpleDiv");
+            addSkillsSimpleDiv.innerHTML ="Additional Skills";
+
+            var expSimpleDiv = createDiv("expSimpleDiv");
+            expSimpleDiv.innerHTML= "Project based intensive program with emphasis on Mongo, Express, React javascript(MERN) Technical statck.";
+
+
+            //left div
+            var leftDiv = createDiv("leftDiv");
+            leftDiv.appendChild(userIconText);
+            leftDiv.appendChild(profDesc);
+            leftDiv.appendChild(techSkillsText);
+
+            leftDiv.appendChild(techSkillsSimpleDiv);
+            leftDiv.appendChild(skillJava);
+            leftDiv.appendChild(skillCss);
+            leftDiv.appendChild(skillHtml);
+            leftDiv.appendChild(skillReact);
+
+            leftDiv.appendChild(addSkillsSimpleDiv);
+            leftDiv.appendChild(skillProjManage);
+            leftDiv.appendChild(skillRecruitment);
+            leftDiv.appendChild(skillEditing);
+            leftDiv.appendChild(skillFundraising);
+       
+
+            leftDiv.appendChild(workExIcoTxt);
+            leftDiv.appendChild(expHead2);
+            leftDiv.appendChild(ul);
+
+
+            
+            parenDiv.appendChild(leftDiv);
+            //mid div - vertical ruler
+            var midDiv = createDiv("midDiv");
+
+
+
+            parenDiv.appendChild(midDiv);
+            //right div
+            var rightDiv = createDiv("rightDiv");
+            
+            rightDiv.appendChild(workExIcoTxt2);
+            rightDiv.appendChild(expHead1);
+            
+            rightDiv.appendChild(ul2);
+            rightDiv.appendChild(educationIconText);
+            rightDiv.appendChild(expHead3);
+            rightDiv.appendChild(expSimpleDiv);
+            rightDiv.appendChild(ul3);
+            rightDiv.appendChild(expHead4);
+
+
+            parenDiv.appendChild(rightDiv);
+            //apeending parent div to body
+            document.body.appendChild(parenDiv);
+    </script>
+
+
+
+
+</body>
+</html>
