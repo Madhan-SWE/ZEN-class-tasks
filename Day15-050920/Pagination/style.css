@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(98, 98, 98);
+}
+
+th,
+td {
+  padding: 5px;
+}
+thead {
+  background-color: white;
+}
+tbody {
+  background-color: cornsilk;
+}
+tfoot {
+  background-color: white;
+}
+.active {
+  color: white;
+  background-color: blue;
+}
+.frameDiv {
+  margin-top: 10px;
+  position: relative;
+  left: 20%;
+}
+input {
+  display: block;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  font-weight: bold;
+}
+button {
+  margin: 1px;
+  background-color: white;
+  padding: 10px;
+  font-weight: bold;
+  color: blue;
+  width: 55px;
+}
+button:hover {
+  color: white;
+  background-color: rgb(85, 193, 226);
+}
