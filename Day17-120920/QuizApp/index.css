@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  width: 10rem;
+}
+
+.addWidth {
+  width: 10rem;
+}
+.choice-text:hover {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgb(157, 172, 255);
+  transform: translateY(-0.1rem);
+  cursor: pointer;
+}
+
+.correct {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgb(11, 250, 71);
+  transform: translateY(-0.1rem);
+  cursor: pointer;
+}
+.wrong {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgb(255, 118, 26);
+  transform: translateY(-0.1rem);
+  cursor: pointer;
+}
