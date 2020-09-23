@@ -1,0 +1,148 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>TV Application</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <div class="row p-2">
+                <div class="col-12 text-center">
+                    <h1> TV APPLICATION </h1>
+                </div>
+            </div>
+            <div class="row">
+                
+
+                <div class="col-lg-9 col-md-12">
+                    <div class="TVFrame" >
+                        <div class="TV" id="tvContent">
+                            <div class="video" >
+                                <video id="videoDiv">
+                                    <source id="vdo" src="Song1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="songsList">
+                                <div class="songsListInner">
+                                    <ul id="addChannel">
+                                        <li class="songName">Song 1</li>
+                                        <li class="songName">Song 2</li>
+                                        <li class="songName activeSong">Song 3</li>
+                                        <li class="songName">Song 4</li>
+                                        <li class="songName">Song 5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="songText" ><marquee direction="right" id="songText">"Song name comes here  in this long space...."</marquee></div>
+                            <div class="statusBar">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="videoProgress">
+                                            <div class="VideoProgressPoints" id="VideoProgressPoints"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        
+                                        <button class="btn btn-outline-dark statusBarButton" value="minus">
+                                            <i class="fa fa-minus-square" data-value="minus"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark statusBarButton" value="prev">
+                                            <i class="fa fa-step-backward" data-value="prev"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark statusBarButton" value="play/pause">
+                                            <i class="fa fa-pause" data-value="play/pause" id="playbtn"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark statusBarButton" value="next">
+                                            <i class="fa fa-step-forward" data-value="next"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark statusBarButton" value="plus">
+                                            <i class="fa fa-plus-square" data-value="plus"></i>
+                                        </button>
+                                        
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="audioProgress">
+                                            <div class="audioProgressPoints"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <div class="remote">
+                    <div class="row justify-content-center ">
+                        <div class="col-12 text-center p-2 font-weight-bold"> <h3>Remote Controller </div> 
+                    </div>
+                    <div class="row"> 
+                        <div class="col-12  text-center p-2"><button class="btn btn-success  remoteButton" id="powerBtn" value="power">Power</button>  </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center p-2">
+                            <button class="btn btn-dark remoteButton"  value="up"><i class="fa fa-arrow-up"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 text-center p-2">
+                            <button class="btn btn-dark remoteButton"  value="left"><i class="fa fa-arrow-left"></i></button>
+                            <button class="btn btn-dark remoteButton" value="OK">OK</button>
+                            <button class="btn btn-dark remoteButton" value="right"><i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center p-2">
+                            <button class="btn btn-dark remoteButton" value="down"> <i class="fa fa-arrow-down"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center p-2">
+                            
+                            <button class="btn btn-dark p-1 remoteStatusBtn" value="minus">
+                                <i class="fa fa-minus-square" data-value="minus"></i>
+                            </button>
+                            <button class="btn btn-dark p-1 remoteStatusBtn" value="prev">
+                                <i class="fa fa-step-backward" data-value="prev"></i>
+                            </button>
+                            <button class="btn btn-dark p-1 remoteStatusBtn" value="play/pause">
+                                <i class="fa fa-play" data-value="play/pause" id="playbtn"></i>/
+                                <i class="fa fa-pause" data-value="play/pause" id="playbtn"></i>
+                            </button>
+                            <button class="btn btn-dark p-1 remoteStatusBtn" value="next">
+                                <i class="fa fa-step-forward" data-value="next"></i>
+                            </button>
+                            <button class="btn btn-dark p-1 remoteStatusBtn" value="plus">
+                                <i class="fa fa-plus-square" data-value="plus"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="public/bundle.js"></script>
+    </body>
+</html></body></html>
