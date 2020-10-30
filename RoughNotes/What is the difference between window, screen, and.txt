@@ -1,0 +1,487 @@
+What is the difference between window, screen, and document in Javascript?
+JSON task 
+https://medium.com/@reach2arunprakash/guvi-zen-code-sprint-javascript-practice-problems-in-json-objects-and-list-49ac3356a8a5
+Add error handling to the xmlhttprequest code
+Convert the ppt into a writeup 
+https://www.slideshare.net/nzakas/enterprise-javascript-error-handling-presentation/25-C_ommunication_E_rrors_Invalid
+Find the fix – for the error slide
+
+
+function second(a,b) {
+	var opr1 = 10;
+	var opr2 = 90;
+	// body...
+}
+
+arr = [add,sub,mul];
+second(1,arr);  // 100
+second(2,arr);  // -80
+second(3,arr);  // 900
+add(a,d)
+{
+
+}
+sub(a,d)
+{
+	
+}
+mul(a,d)
+{
+	
+}
+
+
+
+a = [10,20,300,400,499,70];
+
+function f(a)
+{
+	var b=[];
+	for (var i = 0; i < a.length ; i++) {
+		if(a[i]<100)
+		{
+			b.push(a[i])
+		}
+
+}
+	return b;
+}
+
+function f1(item)
+{
+   return item<100;
+}
+
+c = f(a)
+console.log(c);
+
+ss = a.filter(f1)
+console.log(ss);
+
+
+1. Callback task - Task for callback ( in Slide )
+2. Anyo & IIFE - Do the below programs in anonymous function & IIFE ( in Slide)
+
+
+Rest countries:
+
+Get the countries in asia - filter 
+Get the countries with population less than 2L - fliter
+Bumpup the current population  of all the counteirs by 1L - Map 
+convert all the names in capital - map
+print follwoig details  name , capital , flag  - foreach,filter
+
+Print the total population of the countries  - reduce
+Print the total population of the countries in asia - filter & reduce
+
+
+
+1. Callback task - Task for callback ( in Slide )
+2. Anyo & IIFE - Do the below programs in anonymous function & IIFE ( in Slide)
+
+
+Rest countries:
+
+Get the countries in asia - filter 
+Get the countries with population less than 2L - fliter
+Bumpup the current population  of all the counteirs by 1L - Map 
+convert all the names in capital - map
+print follwoig details  name , capital , flag  - foreach,filter
+
+Print the total population of the countries  - reduce
+Print the total population of the countries in asia - filter & reduce 
+
+https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f
+++++++++++++++
+
+
+
+1. Callback task - Task for callback ( in Slide )
+2. Anyo & IIFE - Do the below programs in anonymous function & IIFE ( in Slide)
+
+
+Rest countries:
+
+Get the countries in asia - filter 
+Get the countries with population less than 2L - fliter
+Bumpup the current population  of all the counteirs by 1L - Map 
+convert all the names in capital - map
+print follwoig details  name , capital , flag  - foreach,filter
+
+Print the total population of the countries  - reduce
+Print the total population of the countries in asia - filter & reduce 
+https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f
+
+class A{
+	constructor(n)
+	{
+		this.name = n
+	}
+	f1() { var name = "dummy";
+	console.log(this.name);console.log(name)}// runs in the lexical scope of obj
+}
+ obj = new A("arun") // {"name":"arun"}
+ obj1 = new A("Prakash") //{"name":"Prakash"}
+
+
+obj.f1()
+obj1.f1()
+
+
+class Animal { 
+  constructor(name) {
+    this.name = name;
+  }
+  
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+class Dog extends Animal {
+  constructor(name) {
+    super(name); // call the super class constructor and pass in the name parameter
+  }
+
+  speak() {
+ //super.speak();
+    console.log(`${this.name} barks.`);
+  }
+}
+
+let d = new Dog('Mitzie');
+d.speak(); // Mitzie barks.
+
+
+
+
+https://docs.google.com/document/d/1AB04kg6FD9UuJgfW3P9Ml_Ol9tFCNJRVT2mx4jPKK3U/edit
+
+
+Day7-080820\Task2\Circle.js
+
+${workspaceFolder}\\Day7-080820\\Task0-CalculatorClass\\calaculator.js
+
+
+
+
+https://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
+
+https://tin.tin.nsdl.com/pan/changerequest.html
+
+
+Shruthi Palani To Everyone12:46:33 PM
+okay
+rupam gogoi To Everyone12:47:33 PM
+ok
+Muruganantham SP To Everyone12:47:53 PM
+https://tin.tin.nsdl.com/pan/changerequest.html
+https://gist.github.com/rvsp/da08f5ffa59a76699213036005ee0f44
+
+
+
+https://www.linkedin.com/in/chamow/
+9445640398
+m
+
+
+https://cssgradient.io/
+https://www.cssmatic.com/
+https://mycolor.space/gradient
+https://uigradients.com/#EasyMed
+https://www.css-gradient.com/
+https://caniuse.com/
+https://html-css-js.com/
+
+
+https://gist.github.com/rvsp/735c2cf7cf360f797bae093fa2dfe04d
+
+
+
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+
+
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+
+
+
+
+
+2 unit types
+Absolute
+cm & mm
+in - 1 in = 96 px = (2 to 3cm)
+px - 1px = 1/96th of 1 in
+pt - 1pt = 1/72 of 1in
+Relative
+em - 16px * 2 = 32px
+rem - relative to font-size of root
+vh - 1% of height of viewport
+vw - 1% of width of viewport
+vmin - 1% of viewport smaller dimension
+vmax - 1% of viewport larger dimension
+% - relative to parent element
+
+
+https://flexboxfroggy.com/
+
+https://flukeout.github.io/
+
+https://mastery.games/
+
+https://cssgridgarden.com/
+
+https://learncssgrid.com/
+
+
+What is css?
+ways to use css
+property & value
+class vs id 
+use of important
+box model->padding,margin,border
+display property->inline, block
+position property-fixed,static,relative,absolute,sticky
+gradient
+-------------------------------------------------------------
+parent inherit
+overflow
+drop box
+clip
+measurements
+fonts
+icons
+media query - rows & cols
+meta
+
+
+
+https://github.com/rvsp/HTML-CSS
+
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<div class="skewedBlock storyTellingBackGround">
+
+        </div>
+
+           background-color: #1F1527;
+
+
+pointMessagingContentBackGround
+easyForUsersBackGround
+
+longScrollnotesBackGround
+slowerLoadTimesBackGround
+
+awkwardNavigationGround
+
+pointMessagingContent
+easyForUsersBackGround
+longScrollnotesBackGround
+slowerLoadTimesBackGround
+awkwardNavigationGround
+
+
+foundation css
+materialize css
+nonrmalize css
+bulma
+sematic ui
+
+https://previews.123rf.com/images/irinaww/irinaww1801/irinaww180100002/93838397-newspaper-template-layout-print-design-with-dark-red-and-black-elements-vector-pages.jpg
+
+
+https://previews.123rf.com/images/irinaww/irinaww1801/irinaww180100002/93838397-newspaper-template-layout-print-design-with-dark-red-and-black-elements-vector-pages.jpg
+https://images.template.net/wp-content/uploads/2017/03/political-newspaper.jpg
+
+
+https://www.lipsum.com/
+
+https://images.template.net/wp-content/uploads/2017/03/political-newspaper.jpg
+https://previews.123rf.com/images/irinaww/irinaww1801/irinaww180100002/93838397-newspaper-template-layout-print-design-with-dark-red-and-black-elements-vector-pages.jpg
+
+createElement
+getElementById
+querySelector
+querySelectorAll
+innerHTML vs innerText
+append vs appendChild
+
+alert, prompt, confirm
+setTimeout,setInterval
+
+https://gist.github.com/rvsp/735c2cf7cf360f797bae093fa2dfe04d#file-task-1-jpeg
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link
+ 	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style
+Calculator
+    Constraints:
+        should dom elements only
+        no html tag in body
+        should section
+        key events(keyboard press)
+        can use bootstrap/Your own CSS
+https://docs.google.com/document/d/1VyZJG0KZAoZEs3h_lpP65XPekNqsbFp8bouOZSWsOTc/preview
+Test URL: www.guvi.in/B15Assessment1g.uvi 
+Access Code: guvi#zen
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+https://www.w3.org/TR/WD-DOM/introduction.html
+
+
+Task -
+https://docs.google.com/document/d/1VyZJG0KZAoZEs3h_lpP65XPekNqsbFp8bouOZSWsOTc/preview
+Test URL: www.guvi.in/B15Assessment1g.uvi 
+Access Code: guvi#zen
+
+
+
+callback
+aync/await
+promise
+async es5 es6 babael & typescript
+oops
+
+http://latentflip.com/loupe
+
+call back hell
+    avoided by promise
+http://callbackhell.com/
+
+https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+https://www.freecodecamp.org/news/javascript-callback-functions-what-are-callbacks-in-js-and-how-to-use-them/
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+https://www.freecodecamp.org/news/how-to-deal-with-nested-callbacks-and-avoid-callback-hell-1bc8dc4a2012/
+https://miro.medium.com/max/865/1*7jfiG0JLMrTbgyg7nb0O0A.jpeg
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
+
+
+
+
+Taks:
+https://docs.google.com/document/d/1O8yVCwB_GaY5rZK1_mNkZ9GeYJLeom_dYmcVN3Mb2ws/edit
+https://docs.google.com/document/d/1K6jW6TPmqWvzoRAm2t-GlOAxKmMRsLt5zaCsdcH_3LM/edit
+
+
+https://docs.google.com/document/d/1O8yVCwB_GaY5rZK1_mNkZ9GeYJLeom_dYmcVN3Mb2ws/edit
+	
+
+http://latentflip.com/loupe/
+https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=youtu.be
+
+
+Task
+======
+
+https://random-word-api.herokuapp.com/word?number=1
+https://developers.giphy.com/
+
+
+
+
+
+pagination - wednesday EOD
+taks(submit it before thursday EOD) -https://docs.google.com/document/d/1s5jhTeSD2ff2rHKbC5VQjao4Jbu257dxubwEKusoA9A/edit
+assessment(5 hours) https://docs.google.com/document/d/1e7G8L2vg7lm6ZUsFq7UlBE6lBUw_ukcvQdz-HPwrCpI/edit
+
+
+
+
+Venkatasubramanian R12:50 PM
+https://docs.google.com/document/d/1BNv_YLH9ypAbUuWVEhQpSlL3q9RLsWVJECAFY4kqle8/edit
+Aravind Iceskater12:51 PM
+hi iam back
+Venkatasubramanian R12:51 PM
+https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b
+https://www.typescriptlang.org/docs/
+https://engineering.carsguide.com.au/es5-vs-es6-syntax-6c8350fa6998
+https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b
+prem kumar12:52 PM
+when is our next assessment ?
+Venkatasubramanian R12:52 PM
+https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164
+https://medium.com/javascript-in-plain-english/is-typescript-the-way-forward-659caa2cb10f
+
+
+
+
+
+
+
+
+Babel set up:
+
+https://gist.github.com/rvsp/4e9cbeb58a7cd6d665c3f040e2d0be3a
+https://gist.github.com/rvsp/4e9cbeb58a7cd6d665c3f040e2d0be3a
+
+
+
+https://docs.google.com/document/d/15vyACiNFsfKz89lcsBkcaTMprao8x5oMpoQzHFUSMJk/edit
+
+Venkatasubramanian R12:10 PM
+https://docs.google.com/document/d/15vyACiNFsfKz89lcsBkcaTMprao8x5oMpoQzHFUSMJk/edit
+https://kangax.github.io/compat-table/es6/
+
+
+topics - typescript
+    simple class
+    methods & properties
+    constructor
+    objects
+    methods return type & parameter return type
+    use of type
+    optional parameter
+    interface
+    import of ts files
+
+webpack
+dom
+types of of inheritance
+super
+overriding
+
+
+Datastructures:
+https://docs.google.com/presentation/d/1yrCBAV1gRHtTVMU7T4mMUw70BBoyYOxLQdbp-yoYhvI/edit?usp=sharing
+https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/
+  
+https://docs.google.com/presentation/d/1ET5xSuNlmIp34DzcNyXcOUWoHG6-XjiO8YvIKwQPCYY/edit?usp=sharing
+
+
+
+
+24.10.2020
+==========
+mysql engines-storage engines chart
+crud operations
+
+
+
+
+SELECT distinct director FROM movies order by director asc;
+SELECT * from movies order by year desc limit 4;
+SELECT * from movies order by title asc limit 5;
+SELECT * from movies order by title asc limit 5 offset 5;
+
+
+
+1.SELECT * FROM movies inner join Boxoffice on movies.id=Boxoffice.movie_id;
+2.SELECT * FROM movies inner join Boxoffice on movies.id=Boxoffice.movie_id where Boxoffice.domestic_sales<Boxoffice.international_sales;
+3.SELECT * FROM movies inner join Boxoffice on movies.id=Boxoffice.movie_id
+order by Boxoffice.rating desc;
+
+https://docs.google.com/document/d/1l2dyIlPay0imSS081ESdBxEL2XORtJFW2qldM6sfgfA/edit
+
+
+https://sqliteonline.com/
+https://livesql.oracle.com/apex/f?p=590:1000
+
+https://docs.google.com/document/d/1rKdXOALL4Jtg-qQLkvf5ThNIZ44xDDgRsBbBrU1ceu8/edit
