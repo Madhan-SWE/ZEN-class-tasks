@@ -485,3 +485,16 @@ https://sqliteonline.com/
 https://livesql.oracle.com/apex/f?p=590:1000
 
 https://docs.google.com/document/d/1rKdXOALL4Jtg-qQLkvf5ThNIZ44xDDgRsBbBrU1ceu8/edit
+
+
+
+
+01.11.20
+===========
+
+Day 1 task: https://github.com/rvsp/database/tree/master/mongodb
+
+Aggregation pipeline: https://docs.mongodb.com/manual/core/aggregation-pipeline/
+sort: https://docs.mongodb.com/manual/reference/operator/aggregation/sort/#pipe._S_sort
+projection operators: https://docs.mongodb.com/manual/reference/operator/query/
+collections: https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/index.html
