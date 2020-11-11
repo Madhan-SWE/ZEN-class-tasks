@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "e124089a-fd1d-4666-acf9-d5b70269cdc9",
+		"name": "HallBooking Application",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/rooms",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rooms"
+					]
+				},
+				"description": "To get the rooms and bookings"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{BASE_URL}:{PORT}/rooms",
+							"protocol": "http",
+							"host": [
+								"{BASE_URL}"
+							],
+							"port": "{PORT}",
+							"path": [
+								"rooms"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/rooms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"roomNo\": 3,\r\n            \"noOfSeats\": 2,\r\n            \"amenities\": \"AC, LED TV, FAN\",\r\n            \"pricePerHour\": 1200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rooms"
+					]
+				},
+				"description": "Create a new room"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{BASE_URL}:{PORT}/rooms",
+							"protocol": "http",
+							"host": [
+								"{BASE_URL}"
+							],
+							"port": "{PORT}",
+							"path": [
+								"rooms"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				},
+				"description": "To get the list of customers"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{BASE_URL}:{PORT}/customers",
+							"protocol": "http",
+							"host": [
+								"{BASE_URL}"
+							],
+							"port": "{PORT}",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/bookRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Sacheinkumar\",\r\n    \"date\": \"2020-11-15\",\r\n    \"startTime\": \"2020-11-15T12:30:50\",\r\n    \"endTime\": \"2020-11-16T05:30:00\",\r\n    \"roomId\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bookRoom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookRoom"
+					]
+				},
+				"description": "To Book a new room"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{BASE_URL}:{PORT}/bookRoom",
+							"protocol": "http",
+							"host": [
+								"{BASE_URL}"
+							],
+							"port": "{PORT}",
+							"path": [
+								"bookRoom"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c0c64fe5-aec0-4c3f-93e2-3d32cea33b0f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f3c63f22-24c5-462e-a914-b70c4f04d726",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "67f094fb-4944-4686-be3d-46a633d98b6d",
+			"key": "BASE_URL",
+			"value": "localhost"
+		},
+		{
+			"id": "d4933edf-b821-4f98-9ae5-9467748127f2",
+			"key": "PORT",
+			"value": "3000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

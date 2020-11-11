@@ -6,15 +6,20 @@ const port = 3000;
 const localDir = "C:/Users/MadhanKumar.C/Downloads";
 
 function runApp() {
+    // method to run app
     console.log("Node Js application is running @ PORT: ", port);
 }
 
 function getIndexPage(req, response) {
+    // Index page 
     response.send("<b>Hello World ! here is the index page.</b>");
 }
 
 function getList(req, response) {
+    // method to get list of files
+
     function readFiles(err, files) {
+        // method to get files in the directory
         if (err) 
             throw err;
         
@@ -70,8 +75,37 @@ function getList(req, response) {
     fs.readdir(localDir, readFiles);
 }
 
+
+function createFile(req, response)
+{
+    let today = new Date();
+    let date = today.getFullYear()+'-'+(today.getMonth())+'-'+today.getDate() +
+               "-" + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    console.log(date);
+
+    fs.writeFileSync( date + ".txt", date, { flag: 'wx' }, (err) => {
+        if (err) {
+            console.log("---",err);
+            response.status(500).json({result: false, message: "Internal server error"});
+            
+            throw err;
+            return;
+        }
+    });
+    
+    //console.log(localDir + "/" + date + ".txt")
+    response.send("File written Successfully !")
+
+}
+
+
 app = express();
 app.listen(port, runApp);
+
+// Added static file hosting
 app.use("/images", express.static(path.join(__dirname, "images")));
+
+// API routing
 app.get("/", getIndexPage);
 app.get("/list", getList);
+app.get("/createFile", createFile);

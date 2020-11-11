@@ -1,0 +1,77 @@
+[
+    {
+        "bookingId": 1,
+        "customerName": "Madhankumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-15T02:30:50",
+        "endTime": "2020-11-15T05:30:00",
+        "roomId": 2
+    },
+    {
+        "bookingId": 2,
+        "customerName": "Arunkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-15T02:30:50",
+        "endTime": "2020-11-15T05:30:00",
+        "roomId": 1
+    },
+    {
+        "bookingId": 3,
+        "customerName": "Rameshkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-15T02:30:50",
+        "endTime": "2020-11-15T05:30:00",
+        "roomId": 3
+    },
+    {
+        "bookingId": 4,
+        "customerName": "Sureshkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-15T02:30:50",
+        "endTime": "2020-11-15T05:30:00",
+        "roomId": 4
+    },
+    {
+        "bookingId": 5,
+        "customerName": "Sureshkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-16T02:30:50",
+        "endTime": "2020-11-16T05:30:00",
+        "roomId": 4
+    },
+    {
+        "bookingId": 6,
+        "customerName": "Sacheinkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-16T02:30:50",
+        "endTime": "2020-11-16T05:30:00",
+        "roomId": 1
+    },
+    {
+        "bookingId": 7,
+        "customerName": "Sacheinkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-15T10:30:50",
+        "endTime": "2020-11-16T05:30:00",
+        "roomId": 3
+    },
+    {
+        "bookingId": 8,
+        "customerName": "Sacheinkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-11-15T12:30:50",
+        "endTime": "2020-11-16T05:30:00",
+        "roomId": 5
+    },
+    {
+        "bookingId": 9
+    },
+    {
+        "customerName": "Sacheinkumar",
+        "date": "2020-11-15",
+        "startTime": "2020-12-15T12:30:50",
+        "endTime": "2020-12-16T05:30:00",
+        "roomId": 5,
+        "bookingId": 10
+    }
+]
